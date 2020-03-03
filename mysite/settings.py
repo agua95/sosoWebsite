@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home.apps.HomeConfig',
-    'tinymce'
+    'tinymce',
+    'aiconstruct',
 ]
 
 TINYMCE_DEFAULT_CONFIG = {

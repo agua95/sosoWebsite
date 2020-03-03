@@ -20,6 +20,6 @@ urlpatterns = [
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
     path('home/', include('home.urls')),
-    path('', include('home.urls')),
-    path(r'^tinymce/', include('tinymce.urls'))
+    path('', include('aiconstruct.urls')),
+    path(r'^tinymce/', include('tinymce.urls')),
 ]
