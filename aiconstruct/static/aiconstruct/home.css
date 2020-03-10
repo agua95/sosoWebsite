@@ -13,8 +13,6 @@
     height: 400px;
     background-color: green;
     display: none;
-    position: relative;
-    z-index: 10;
     padding-left: 0px;
     padding-right: 0px;
 }
