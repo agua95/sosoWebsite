@@ -30,7 +30,9 @@
   <div class="card-container">
     <div class="row">
         <div class="col s12 card-items"  id="float_card">
-          <div class="dropper" id="samples-extra"></div>
+          <div class="dropper" id="samples-extra">
+            ARENT I FREAKING AWESOME HAHAHAHAHA
+          </div>
           <div class="card blue-grey darken-1"style="height: 25vh; overflow: hidden; display: flex; flex-direction: column;background: lightgray;">
             <div class="card-content white-text" style="flex: 1;">
               <span class="card-title">
@@ -49,7 +51,9 @@
       </div>
       <div class="row">
         <div class="col s12 card-items"  id="float_card">
-          <div class="dropper" id="brands-extra"></div>
+          <div class="dropper" id="brands-extra">
+            ¯\_(ツ)_/¯
+          </div>
           <div class="card blue-grey darken-1"style="height: 25vh; overflow: hidden; display: flex; flex-direction: column;background: lightgray;">
             <div class="card-content white-text" style="flex: 1;">
               <span class="card-title">
@@ -68,7 +72,9 @@
       </div>
       <div class="row">
         <div class="col s12 card-items"  id="float_card">
-          <div class="dropper" id="service-extra"></div>
+          <div class="dropper" id="service-extra">
+            Call me a web dev mofo
+          </div>
           <div class="card blue-grey darken-1"style="height: 25vh; overflow: hidden; display: flex; flex-direction: column;background: lightgray;">
             <div class="card-content white-text" style="flex: 1;">
               <span class="card-title">
@@ -104,11 +110,19 @@
         $(this).parent().children(".card-container").css({'padding-left':'50px'});
         x = 0
       } */
-      $(".card").slideDown()
-      $(".dropper").slideUp()
+
+
+
       $(this).slideUp()
       $(this).parent().children(".dropper").slideDown()
 
+    })
+
+    $(document).on("click", ".dropper", function(){
+
+      $(this).parent().children(".card").slideDown()
+      $(this).slideDown()
+      $(this).parent().children(".dropper").slideUp()
     })
     
   </script>
