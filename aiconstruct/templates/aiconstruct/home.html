@@ -86,9 +86,21 @@
       </div>
   </div>
   <script>
-    $(document).on("click", ".card", function(){
-      $(".dropper").slideUp()
-      $(this).parent().children(".dropper").slideDown()
+    var x = 0
+    $(document).on("click", ".card,.dropper", function(){
+      if (x == 0)
+      {
+        $(this).parent().children(".dropper").fadeIn()
+        $(this).parent().children(".card blue-grey darken-1").fadeOut()
+        x = 1
+      }
+      else
+      {
+        $(this).parent().children(".dropper").fadeOut()
+        $(this).parent().children(".card blue-grey darken-1").fadeIn()
+        x = 0
+      }
+
     })
     
   </script>
