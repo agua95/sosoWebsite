@@ -106,9 +106,14 @@
       $(this).slideUp()
       $(this).parent().children(".dropper").slideDown()
       $(this).parents('.card-items').css("cssText", "padding-left: 0px !important; padding-right: 0px !important;");
-      $(document).ready(function(){
-        $('.carousel').carousel();})
-    })
+      $(document).ready(function () {
+        $('.carousel').carousel(
+          {
+            numVisible: 3,
+            indicators: true,
+          });
+        });
+    });
 
     $(document).on("click", ".dropper", function(){
 
