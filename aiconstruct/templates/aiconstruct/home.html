@@ -106,6 +106,8 @@
       $(this).slideUp()
       $(this).parent().children(".dropper").slideDown()
       $(this).parents('.card-items').css("cssText", "padding-left: 0px !important; padding-right: 0px !important;");
+      $(document).ready(function(){
+        $('.carousel').carousel();})
     })
 
     $(document).on("click", ".dropper", function(){
@@ -114,8 +116,7 @@
       $(this).slideDown()
       $(this).parent().children(".dropper").slideUp()
       $(this).parents('.card-items').css("cssText", "padding-left: 50px !important; padding-right: 50px !important;");
-      $(document).ready(function(){
-        $('.carousel').carousel();})
+
     })
 
     $(document).on("click", ".carousel", function*()
