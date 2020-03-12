@@ -2,10 +2,13 @@
     margin: 0px;
 }
 
+.card-items{
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
+
 .card-container{
     margin-top: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
 }
 
 
